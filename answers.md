@@ -61,3 +61,11 @@ Part 3:
 9. Yes
 10. flower.putSelfInGrid(gr, loc);
 11. 4 times
+
+Part 4:
+1. act(), getActors(), processActors(), getMoveLocations(), selectMoveLocation(), makeMove()
+2. getActors, processActors, getMoveLocations, selectMoveLocation, makeMove
+3. No, because that is a primitive method non-unique to each Critter
+4. Comparing the different actors that could be there, Rock, Bug, Actor etc.
+5. Has to check actors, has to compare them, has to find available spots to move, then it will move.
+6. 
