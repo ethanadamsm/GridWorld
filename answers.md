@@ -63,9 +63,23 @@ Part 3:
 11. 4 times
 
 Part 4:
-1. act(), getActors(), processActors(), getMoveLocations(), selectMoveLocation(), makeMove()
+1. getActors(), processActors(), getMoveLocations(), selectMoveLocation(), makeMove()
 2. getActors, processActors, getMoveLocations, selectMoveLocation, makeMove
-3. No, because that is a primitive method non-unique to each Critter
+3. No, because that is a primitive method non-unique to each Critter, is the super class method that uses hook methods. 
 4. Comparing the different actors that could be there, Rock, Bug, Actor etc.
 5. Has to check actors, has to compare them, has to find available spots to move, then it will move.
-6. 
+6. Critter extends actor which has a constructor.
+
+1. It overwrites hook methods that are called by act within the superclass, Critter
+2. The critter would delete itself because it the loc would be null. 
+3. You could create a flower object and put it in the grid using the putSelfInGrid method and passing in the grid and the location that you wanted to put it at. 
+4. It doesn't need to change the way that it finds the actors around it, it only needs the actors adjacent.
+5. Actor
+6. Grid<Actor> getGrid()
+
+1. All that the crab critter does is eat things around it that aren't rocks or other critters. 
+2. It finds the actors in front of it, left of it and right of it. Then it "eats" the ones that aren't critters or rocks, by destroying the actor object within the grid.
+3. It only wants actors in directions that it specifies using the frame of where it is already looking, so using directions would be able to happen at any point. 
+4. (3, 3), (3, 5), (4, 4)
+5. Critters and crab critters can move to the same point depending on how they are programmed, but the crab critter can only move left and right whereas a regular critter can move in any direction adjacent to it. 
+6. If the crab can't move either left or right, it will turn a random number of turns. 

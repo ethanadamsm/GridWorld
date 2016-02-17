@@ -4,6 +4,7 @@ import info.gridworld.actor.Bug;
 public class DancingBug extends Bug{
 	private int[] array;
 	private int position = 0;
+	
 	public DancingBug(int[] array) {
 		this.array = array;
 	}
