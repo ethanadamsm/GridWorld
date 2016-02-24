@@ -19,23 +19,6 @@ public class ChameleonKid extends ChameleonCritter{
 
 		return actors;
 	}
-	
-	public void processActors(ArrayList<Actor> actors) {
-		int n = actors.size();
-		if (n == 0){
-			setColor(getColor().darker());
-			return;
-		}
-		int r = (int) (Math.random() * n);
-
-		Actor other = actors.get(r);
-		setColor(other.getColor());
-	}
-	
-	public void makeMove(Location loc) {
-		setDirection(getLocation().getDirectionToward(loc));
-		super.makeMove(loc);
-	}
 
 	public ArrayList<Location> getLocationsInDirections(int[] directions) {
 		ArrayList<Location> locs = new ArrayList<Location>();
